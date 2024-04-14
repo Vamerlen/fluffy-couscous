@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+    --primary-color:hsl(322, 100%, 66%);
+    --pale-cyan:hsl(193, 100%, 85%);
+    --dark-cyan:hsl(192, 100%, 9%);
+    --greyish-blue:hsl(208, 11%, 55%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+
+  /* navbar */
+
+  .navbar{
+    height: 70px;
+  }
+  .navbar .flex{
+    justify-content: space-between;
+  }
+
+  .navbar img{
+    width: auto;
+  }
+
+
+
+  /* hero-area */
+  .hero-area .container{
+    padding-top: 40px;
+  }
+
+
+  /* cta */
+
+  .cta .container{
+    position: relative;
+    top: 50px;
+    overflow: visible;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  .cta .container .card{
+    height: 220px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta .container .btn{
+    margin-top: 20px;
+  }
+
+
+  /* footer */
+.footer{
+    padding-top: 2rem;
+    color: #fff;
+    justify-items: space-between;
+}
+  .footer img{
+    width: auto;
+  }
+
+  .contacts .logo{
+    color: #fff;
+  }
+
+  .footer .socials a{
+    margin: 0 10px;
+  }
+
+.phone .flex{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-one a:hover,
+.menu-two a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+.fa-github:hover {
+    color: #000000;
+  }
+  
+  .fa-facebook:hover {
+    color: #1773EA;
+  }
+  
+  .fa-instagram:hover {
+    color: #B32E87;
+  }
+  
+  .fa-twitter:hover {
+    color: #1C9CEA;
+  }
+
+
+
+
+
+
+  /* utilities */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .btn {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 20px 40px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .btn:hover{
+    opacity: 60%;
+    font-weight: bolder;
+  }
+
+  .btn-nav{
+    background: #fff;
+    color: var(--dark-cyan);
+    padding: 15px 60px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .flex-std{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .bg-color{
+    background-color: var(--dark-cyan);
+    opacity: 90%;
+  }
+
+  .grid-four{
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bg-color-light{
+    background-color: var(--pale-cyan);
+    background-image: url(./images/bg-hero-desktop.svg)
+  }
+
+  .s-text{
+    font-size: 14px;
+  }
+
+  .text-color{
+    color: var(--greyish-blue);
+  }
+
+  @media(max-width:500px){
+    .navbar{
+        height: 100px;
+        overflow-x: scroll;
+    }
+
+    .navbar .btn{
+        padding: 10px 25px;
+    }
+
+    .hero-area .btn{
+        width: 100%;
+    }
+
+    .grid
+     {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .footer .socials{
+        text-align: center;
+    }
+
+    .logo {
+      width: auto;
+    }
+  
+  }
+
